@@ -80,6 +80,7 @@ export default function ExperienceCard({ experience }: { experience: Experience 
         className="rounded-md pointer-events-none aspect-video"
         width={1920}
         height={1080}
+        placeholder="blur"
         alt={(experience.company, 'Logo')}
       />
     </div>

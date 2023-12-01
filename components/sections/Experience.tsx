@@ -38,7 +38,7 @@ const experiences = [
     years: 'Mar 2020 - Aug 2021',
     position: 'Founder & Developer',
     description:
-      "Chrome extension built into Restock World's existing auth API which automates the process of purchasing products online. Used to successfully purchased over 45,000 products.",
+      "Chrome extension built into Restock World's existing auth API which automates the process of purchasing products online. Used to successfully purchase over 45,000 products.",
     image: 'rwchrome.png',
     utils: ['javascript', 'html', 'css'],
     private: true

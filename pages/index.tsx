@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="description" content="My portfolio site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="relative flex flex-col items-center w-full px-6 sm:px-8 md:px-12 pb-8">
+      <div className="relative flex flex-col items-center w-full px-4 sm:px-8 md:px-12 pb-8">
         <Header />
         <About />
         <Experience />

@@ -43,8 +43,7 @@ const skills = [
   {
     label: 'Pocketbase',
     icon: 'pocketbase',
-    description:
-      'Recently started using for small projects. Super convenient and easy to stetup'
+    description: 'Recently started using for small projects. Super convenient and easy to stetup'
   },
   {
     label: 'Python',
@@ -99,14 +98,14 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div className="flex flex-col max-w-6xl mt-20 mb-20 w-full">
+    <div className='flex flex-col max-w-6xl mt-20 mb-20 w-full gap-16'>
       <h1
-        id="skills"
-        className="ml-auto mr-auto text-3xl sm:text-4xl text-gray-800 dark:text-gray-200 font-semibold"
+        id='skills'
+        className='ml-auto mr-auto text-3xl sm:text-4xl text-gray-800 dark:text-gray-200 font-semibold'
       >
         Tools I Use
       </h1>
-      <div className="container grid grid-cols-auto-fit flex-wrap gap-8 mt-12">
+      <div className='flex flex-wrap flex-col sm:justify-center sm:flex-row gap-x-6 gap-y-8'>
         {skills.map(skill => (
           <SkillCard skill={skill} key={skill.label} />
         ))}

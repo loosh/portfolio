@@ -77,7 +77,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className='flex flex-col max-w-5xl mt-20'>
+    <div className='flex flex-col max-w-5xl mt-20 gap-4'>
       <h1
         id='projects'
         className='text-3xl sm:text-4xl text-gray-800 dark:text-gray-200 font-semibold'
@@ -86,7 +86,7 @@ export default function Projects() {
       </h1>
       <GlowCapture>
         <Glow color='purple' debug={false} className='' style={{}}>
-          <div className='grid md:grid-cols-2 gap-4 mt-4'>
+          <div className='flex flex-wrap flex-col md:justify-center md:flex-row gap-4'>
             {projects.map(project => (
               <ProjectCard key={project.company} project={project} />
             ))}

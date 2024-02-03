@@ -21,7 +21,7 @@ interface Project {
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className='flex flex-col rounded-xl border-[0.75px] border-zinc-900/5 dark:border-white/10 text-white p-4 bg-white/90 dark:bg-zinc-900 glow:border-zinc-200 dark:glow:bg-zinc-800 dark:glow:border-zinc-500 w-full'>
+    <div className='flex flex-col rounded-xl border-[0.75px] border-zinc-900/5 dark:border-white/10 text-white p-4 bg-white/90 dark:bg-zinc-900 glow:border-zinc-200 dark:glow:bg-zinc-800 dark:glow:border-zinc-500 w-full md:w-[calc(50%_-_0.5rem)]'>
       <div className='flex justify-between items-center'>
         <h3 className='font-medium text-xl text-zinc-700 dark:text-zinc-100'>{project.company}</h3>
         <h5 className='text-sm text-zinc-500 dark:text-zinc-600'>{project.years}</h5>

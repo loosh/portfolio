@@ -9,14 +9,11 @@ export default function MenuItems() {
       <Link className={itemClass} href="/">
         About
       </Link>
-      <Link className={itemClass} href="#experience" scroll={false}>
-        Experience
+      <Link className={itemClass} href="#projects" scroll={false}>
+        Projects
       </Link>
       <Link className={itemClass} href="/resume.pdf" rel="noopener noreferrer" target="_blank">
         Resume
-      </Link>
-      <Link className={itemClass} href="/">
-        Contact
       </Link>
     </>
   );

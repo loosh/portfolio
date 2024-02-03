@@ -1,7 +1,17 @@
-import ExperienceCard from '../ExperienceCard';
+import ProjectCard from '../ProjectCard';
 import { GlowCapture, Glow } from '@codaworks/react-glow';
 
-const experiences = [
+const projects = [
+  {
+    company: 'Pickfinder',
+    years: 'Currently Working On',
+    position: 'Fullstack Developer',
+    description:
+      "NextJS app that automatically display and analyzes the best sports picks for the day. Utilizes NextJS SSR and Pocketbase's DB. Data is scraped from various APIs and updated every 2 minutes.",
+    image: 'pickfinder.png',
+    utils: ['next', 'typescript', 'tailwind', 'pocketbase'],
+    website: 'https://pickfinder.vercel.app'
+  },
   {
     company: 'Plan GPT',
     years: 'Apr 2023 - May 2023',
@@ -65,20 +75,20 @@ const experiences = [
   }
 ];
 
-export default function Experience() {
+export default function Projects() {
   return (
-    <div className="flex flex-col max-w-5xl mt-20">
+    <div className='flex flex-col max-w-5xl mt-20'>
       <h1
-        id="experience"
-        className="text-3xl sm:text-4xl text-gray-800 dark:text-gray-200 font-semibold"
+        id='projects'
+        className='text-3xl sm:text-4xl text-gray-800 dark:text-gray-200 font-semibold'
       >
-        Experience
+        Projects
       </h1>
       <GlowCapture>
-        <Glow color="purple" debug={false} className="" style={{}}>
-          <div className="grid md:grid-cols-2 gap-4 mt-4">
-            {experiences.map(experience => (
-              <ExperienceCard key={experience.company} experience={experience} />
+        <Glow color='purple' debug={false} className='' style={{}}>
+          <div className='grid md:grid-cols-2 gap-4 mt-4'>
+            {projects.map(project => (
+              <ProjectCard key={project.company} project={project} />
             ))}
           </div>
         </Glow>

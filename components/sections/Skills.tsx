@@ -41,6 +41,12 @@ const skills = [
       "My go-to programming language, as it's like JavaScript but better. Use it with Next.js"
   },
   {
+    label: 'Pocketbase',
+    icon: 'pocketbase',
+    description:
+      'Recently started using for small projects. Super convenient and easy to stetup'
+  },
+  {
     label: 'Python',
     icon: 'python',
     description: 'Use for machine learning and data science projects, and other small scripts'

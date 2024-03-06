@@ -13,6 +13,26 @@ const projects = [
     website: 'https://pickfinder.vercel.app'
   },
   {
+    company: 'Restock World',
+    years: 'Dec 2018 - Aug 2021',
+    position: 'Co-Founder',
+    description:
+      'Web dashboard and Discord platform to aid in flipping limited edition software and products such as sneakers for a profit. Sustained a peak of 1,000 MAU and over $40K MRR for over 1 year.',
+    image: 'restockworld.png',
+    utils: ['node', 'javascript', 'react', 'mongodb', 'stripe', 'discord'],
+    twitter: 'https://twitter.com/restockworld'
+  },
+  {
+    company: 'RW Chrome Extension',
+    years: 'Mar 2020 - Aug 2021',
+    position: 'Founder & Developer',
+    description:
+      "Chrome extension built into Restock World's existing auth API which automates the process of purchasing products online. Used to successfully purchase over 45,000 products.",
+    image: 'rwchrome.png',
+    utils: ['javascript', 'html', 'css'],
+    private: true
+  },
+  {
     company: 'Plan GPT',
     years: 'Apr 2023 - May 2023',
     position: 'Frontend Developer',
@@ -32,26 +52,6 @@ const projects = [
     awards: 'LMU Hacks 2023 Winner',
     utils: ['next', 'typescript', 'tailwind', 'python'],
     github: 'https://github.com/arikanev/NewsAggregator'
-  },
-  {
-    company: 'Restock World',
-    years: 'Dec 2018 - Aug 2021',
-    position: 'Co-Founder',
-    description:
-      'Web dashboard and Discord platform to aid in flipping limited edition software and products such as sneakers for a profit. Sustained a peak of 1,000 MAU and over $40K MRR for over 1 year.',
-    image: 'restockworld.png',
-    utils: ['node', 'javascript', 'react', 'mongodb', 'stripe', 'discord'],
-    twitter: 'https://twitter.com/restockworld'
-  },
-  {
-    company: 'RW Chrome Extension',
-    years: 'Mar 2020 - Aug 2021',
-    position: 'Founder & Developer',
-    description:
-      "Chrome extension built into Restock World's existing auth API which automates the process of purchasing products online. Used to successfully purchase over 45,000 products.",
-    image: 'rwchrome.png',
-    utils: ['javascript', 'html', 'css'],
-    private: true
   },
   {
     company: 'Glare Solutions',

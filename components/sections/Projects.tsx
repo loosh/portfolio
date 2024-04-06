@@ -17,7 +17,7 @@ const projects = [
     years: 'Dec 2018 - Aug 2021',
     position: 'Co-Founder',
     description:
-      'Web dashboard and Discord platform to aid in flipping limited edition software and products such as sneakers for a profit. Sustained a peak of 1,000 MAU and over $40K MRR for over 1 year.',
+      'Web dashboard and Discord platform to aid in flipping limited edition software and products such as sneakers for a profit. Sustained a peak of 1,000 MAU and over $40K MRR for over 2 years.',
     image: 'restockworld.png',
     utils: ['node', 'javascript', 'react', 'mongodb', 'stripe', 'discord'],
     twitter: 'https://twitter.com/restockworld'

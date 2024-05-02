@@ -3,8 +3,18 @@ import { GlowCapture, Glow } from '@codaworks/react-glow';
 
 const projects = [
   {
+    company: 'Pythscrip',
+    years: 'Jan 2024 - May 2024',
+    position: 'Fullstack Developer',
+    description:
+      'Compiler for a new programming language that combines the best features of Python and JavaScript. Utilizes Ohm for syntax parsing, and then optimizes and compiles the code to JavaScript.',
+    image: 'pythscrip.png',
+    utils: ['javascript', 'ohm', 'react', 'tailwind'],
+    website: 'https://loosh.github.io/pythscrip'
+  },
+  {
     company: 'Pickfinder',
-    years: 'Currently Working On',
+    years: 'In Progress',
     position: 'Fullstack Developer',
     description:
       "NextJS app that automatically display and analyzes the best sports picks for the day. Utilizes NextJS SSR and Pocketbase's DB. Data is scraped from various APIs and updated every 2 minutes.",

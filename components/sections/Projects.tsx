@@ -3,6 +3,18 @@ import { GlowCapture, Glow } from '@codaworks/react-glow';
 
 const projects = [
   {
+    company: 'Pacman AI Agents',
+    years: 'March 2024 - May 2024',
+    position: 'Machine Learning Engineer',
+    description:
+      'Trained AI agents using reinforcement learning to play a 2v2 capture the flag version of Pacman. Utilized approximate Q-learning, feature/reward design, and particle filtering to beat other teams.',
+    image: 'ghostbusters.png',
+    utils: ['python', 'ai'],
+    awards: '1st Place in Tournament',
+    private: true
+
+  },
+  {
     company: 'Pythscrip',
     years: 'Jan 2024 - May 2024',
     position: 'Fullstack Developer',

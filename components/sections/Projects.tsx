@@ -3,6 +3,16 @@ import { GlowCapture, Glow } from '@codaworks/react-glow';
 
 const projects = [
   {
+    company: 'Pickfinder',
+    years: 'In Progress',
+    position: 'Fullstack Developer',
+    description:
+      "NextJS app that automatically display and analyzes the best sports picks for the day. Utilizes NextJS SSR and Pocketbase's DB. Data is scraped from various APIs and updated every 2 minutes.",
+    image: 'pickfinder.png',
+    utils: ['next', 'typescript', 'tailwind', 'pocketbase'],
+    website: 'https://pickfinder.vercel.app'
+  },
+  {
     company: 'Pacman AI Agents',
     years: 'March 2024 - May 2024',
     position: 'Machine Learning Engineer',
@@ -16,32 +26,12 @@ const projects = [
   {
     company: 'Pythscrip',
     years: 'Jan 2024 - May 2024',
-    position: 'Fullstack Developer',
+    position: 'Developer',
     description:
       'Compiler for a new programming language that combines the best features of Python and JavaScript. Utilizes Ohm for syntax parsing, and then optimizes and compiles the code to JavaScript.',
     image: 'pythscrip.png',
     utils: ['javascript', 'ohm', 'react', 'tailwind'],
     website: 'https://loosh.github.io/pythscrip'
-  },
-  {
-    company: 'Pickfinder',
-    years: 'In Progress',
-    position: 'Fullstack Developer',
-    description:
-      "NextJS app that automatically display and analyzes the best sports picks for the day. Utilizes NextJS SSR and Pocketbase's DB. Data is scraped from various APIs and updated every 2 minutes.",
-    image: 'pickfinder.png',
-    utils: ['next', 'typescript', 'tailwind', 'pocketbase'],
-    website: 'https://pickfinder.vercel.app'
-  },
-  {
-    company: 'Restock World',
-    years: 'Dec 2018 - Aug 2021',
-    position: 'Co-Founder & Developer',
-    description:
-      'Web dashboard and Discord platform to aid in flipping limited edition software and products such as sneakers for a profit. Sustained a peak of 1,000 MAU and over $40K MRR for over 2 years.',
-    image: 'restockworld.png',
-    utils: ['node', 'javascript', 'react', 'mongodb', 'stripe', 'discord'],
-    twitter: 'https://twitter.com/restockworld'
   },
   {
     company: 'RW Chrome Extension',
@@ -75,16 +65,6 @@ const projects = [
     github: 'https://github.com/arikanev/NewsAggregator'
   },
   {
-    company: 'Glare Solutions',
-    years: 'Feb 2019 - March 2020',
-    position: 'Co-Founder',
-    description:
-      'B2B SaaS providing automated notifications for restocks of items on over 10 ecommerce platforms. Alerts sent via Discord webhooks to a peak of 50 business clients and thousands of users.',
-    image: 'glare.png',
-    utils: ['node', 'javascript', 'discord'],
-    private: true
-  },
-  {
     company: 'MyGainz',
     years: 'Nov 2023 - Dec 2023',
     position: 'Frontend Developer',
@@ -98,7 +78,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className='flex flex-col max-w-5xl mt-20 gap-4'>
+    <div className='flex flex-col max-w-5xl mt-12 gap-4'>
       <h1
         id='projects'
         className='text-3xl sm:text-4xl text-gray-800 dark:text-gray-200 font-semibold'

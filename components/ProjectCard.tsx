@@ -21,13 +21,19 @@ interface Project {
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className='flex flex-col rounded-xl border-[0.75px] border-zinc-900/5 dark:border-white/10 text-white p-4 bg-white/90 dark:bg-zinc-900 glow:border-zinc-200 dark:glow:bg-zinc-800 dark:glow:border-zinc-500 w-full md:w-[calc(50%_-_0.5rem)]'>
+    <div className='flex flex-col rounded-xl border-[0.75px] border-zinc-900/5 dark:border-white/10 text-white p-4 bg-gray-100/70 dark:bg-zinc-900 glow:border-white glow:bg-gray-200/60 dark:glow:bg-zinc-800 dark:glow:border-zinc-500 w-full md:w-[calc(50%_-_0.5rem)]'>
       <div className='flex justify-between items-center'>
-        <h3 className='font-medium text-xl text-zinc-700 dark:text-zinc-100'>{project.company}</h3>
-        <h5 className='text-sm text-zinc-500 dark:text-zinc-600'>{project.years}</h5>
+        <h3 className='font-medium text-xl text-zinc-700 dark:text-zinc-100'>
+          {project.company}
+        </h3>
+        <h5 className='text-sm text-zinc-500 dark:text-zinc-600'>
+          {project.years}
+        </h5>
       </div>
       <div className='flex justify-between items-center mb-2'>
-        <h4 className='text-zinc-500 text-sm dark:text-zinc-500'>{project.position}</h4>
+        <h4 className='text-zinc-500 text-sm dark:text-zinc-500'>
+          {project.position}
+        </h4>
         {project.awards && (
           <div className='flex gap-2 items-center'>
             <Trophy className='stroke-amber-400 h-4' width={14} />
@@ -35,8 +41,17 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
         )}
       </div>
-      <p className='text-zinc-600 dark:text-zinc-400 text-sm mb-2'>{project.description}</p>
-      <div className='flex justify-between items-center mb-3 relative pointer-events-none'>
+      <p className='text-zinc-600 dark:text-zinc-400 text-sm mb-3'>
+        <span
+          dangerouslySetInnerHTML={{
+            __html: project.description.replace(
+              /(\$[0-9]+K MRR)/g,
+              match => `<span class='text-green-600'>${match}</span>`
+            )
+          }}
+        />
+      </p>
+      <div className='flex justify-between items-center mb-4 relative pointer-events-none'>
         <div className='flex flex-wrap gap-2'>
           {project.utils.map(util => (
             <Icon key={util} size={30} name={util} />
@@ -89,7 +104,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         )}
       </div>
       <Image
-        src={`/${project.image}`}
+        src={`/images/${project.image}`}
         className='rounded-md pointer-events-none aspect-video'
         width={1920}
         height={1080}

@@ -6,9 +6,9 @@ export default function About() {
       </h1>
       <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 font-light leading-relaxed">
         Software engineer and entrepreneur with a passion for building and designing things that
-        live on the internet. {"I've"} been writing software for over <b>3 years</b>, and have
-        worked on a wide range of projects such as web apps, browser extensions, scalable backends,
-        and more. Currently studying computer science at Loyola Marymount University
+        live on the internet. {"I've"} been writing software for <b>5 years</b>, and have
+        worked on a wide range of projects such as web/mobile apps, browser extensions, scalable backends,
+        and more. Currently studying computer science at Loyola Marymount University. I{"'"}ve also recently been interested in machine learning and natural language processing.
       </p>
     </div>
   );

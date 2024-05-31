@@ -6,13 +6,18 @@ export default function MenuItems() {
 
   return (
     <>
-      <Link className={itemClass} href="/">
+      <Link className={itemClass} href='/'>
         About
       </Link>
-      <Link className={itemClass} href="#companies" scroll={false}>
+      <Link className={itemClass} href='#companies' scroll={false}>
         Experience
       </Link>
-      <Link className={itemClass} href="/resume.pdf" rel="noopener noreferrer" target="_blank">
+      <Link
+        className={itemClass}
+        href='/resume.pdf'
+        rel='noopener noreferrer'
+        target='_blank'
+      >
         Resume
       </Link>
     </>

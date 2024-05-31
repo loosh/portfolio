@@ -10,7 +10,7 @@ const projects = [
       "NextJS app that automatically display and analyzes the best sports picks for the day. Utilizes NextJS SSR and Pocketbase's DB. Data is scraped from various APIs and updated every 2 minutes.",
     image: 'pickfinder.png',
     utils: ['next', 'typescript', 'tailwind', 'pocketbase'],
-    website: 'https://pickfinder.vercel.app'
+    website: 'https://pickfinder.app'
   },
   {
     company: 'Pacman AI Agents',

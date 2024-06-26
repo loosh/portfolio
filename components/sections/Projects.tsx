@@ -66,7 +66,7 @@ const projects = [
   },
   {
     company: 'MyGainz',
-    years: 'Nov 2023 - Dec 2023',
+    years: 'Nov 2022 - Dec 2022',
     position: 'Frontend Developer',
     description:
       'React app for tracking workouts and progress and creating custom routines. Uses Firebase for data persistence and authentication, and Tailwind for styling.',

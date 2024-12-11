@@ -7,7 +7,7 @@ const projects = [
     years: 'In Progress',
     position: 'Fullstack Developer',
     description:
-      "NextJS app that automatically display and analyzes the best sports picks for the day. Utilizes NextJS SSR and Pocketbase's DB. Data is scraped from various APIs and updated every 2 minutes.",
+      "Sports betting research tool supporting over 13 sports and 4 DFS apps.",
     image: 'pickfinder.png',
     utils: ['next', 'typescript', 'tailwind', 'pocketbase'],
     website: 'https://pickfinder.app'
